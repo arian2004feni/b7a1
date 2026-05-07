@@ -3,3 +3,9 @@ function filterEvenNumbers(arry: number[]): number[] {
   return evenNumbers;
 }
 
+function reverseString(str: string): string {
+  const ans = str.split('').reverse().join('');
+  return ans;
+}
+
+
