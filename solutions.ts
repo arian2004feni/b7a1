@@ -63,3 +63,16 @@ class Student extends Person {
 }
 
 
+function getIntersection(arr1: number[], arr2: number[]): number[] {
+  const result: number[] = [];
+
+  for(let n of arr1) {
+    if(arr2.includes(n) && !result.includes(n)) {
+      result.push(n);
+    }
+  }
+
+  return result;
+}
+
+
