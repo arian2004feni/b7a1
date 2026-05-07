@@ -25,3 +25,17 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
 }
 
 
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+
+function toggleReadStatus(book: Book) {
+  return {
+    ...book,
+    isRead: true
+  }
+}
+
+
